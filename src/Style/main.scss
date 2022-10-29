@@ -7,15 +7,18 @@
 
 // font size 
 $font-xxl : 2rem;
+$font-xl : 1.6rem;
 $font-sm : 1rem;
 $font-xs : 0.875rem;
 
 //font width 
 $font-w-xxl : 900;
+$font-w-xl: 700;
 $font-sm-xxl : 600; 
 
 // padding & margin
 $px-xxl : 7rem;
+$px-xl : 4.625rem;
 $py-sm : 0.25rem; 
 
 
@@ -106,9 +109,21 @@ body{
 
 // Section Two
 
+.sectionTwo{
+  padding: $py-sm $px-xxl;
+}
+.section-title{
+  padding: 0 $px-xl;
+  h2{
+    color: $black;
+    font-size: $font-xl;
+    font-weight: $font-w-xl;
+  }
+}
 .sectionTow-cards{
   width: 18rem;
   height: 18rem;
+  padding: $py-sm;
 }
 
 
