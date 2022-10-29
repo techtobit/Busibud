@@ -1,0 +1,21 @@
+// MY THEME COLOR 
+$themeColor:#1492E6;
+$bgColor  : #F8FAFC;
+
+// scss-docs-start gray-color-variables
+$white:    #FFFFFF;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$primary :  $themeColor;
+$secondary : $bgColor;
+
+@import "~bootstrap/scss/bootstrap";
