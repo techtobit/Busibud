@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapfont-sm-xxlis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700&display=swap');
 @import "~bootstrap/scss/bootstrap";
 @import 'variables.scss';
 @import './HeroSection.scss';
@@ -7,9 +7,11 @@
 
 // font size 
 $font-xxl : 2rem;
-$font-xl : 1.6rem;
+$font-xl : 1.5rem;
+$font-md : 1.25rem;  
 $font-sm : 1rem;
-$font-md : 1.125rem;
+$font-xs : 0.875rem;
+$font-xx : 0.5rem;
 $font-mr-xs : 0.75rem;
 $font-xs : 0.875rem;
 
@@ -19,16 +21,28 @@ $font-w-xl: 700;
 $font-sm-xxl : 600; 
 
 // padding & margin
-$px-xxl : 7rem;
-$px-xl : 4.625rem;
-$px-md : 1rem;
-$px-sm :0.25rem;
-$py-sm : 0.25rem; 
-$m-xl : 2.5rem;
-$m-sm : 0.25rem;
-$m-sm : 0.25rem;
-$mx-sm : 0.25rem;
-$mx-md : 0.375rem;
+$xxl : 7rem;
+$xl : 4.625rem;
+$x : 3.75rem;
+$lg : 2.5rem;
+$md : 1rem;
+$ms : 0.5rem;
+$sm :0.375rem;
+$xm : 0.25rem;
+
+$px-xxl : $xxl;
+$px-xl : $xl;
+$px-md : $md;
+$px-sm : $sm;
+
+$py-xl : $xl;
+$py-md : $md;
+$py-sm : $sm;
+
+$m-xl : $xl;
+$m-sm : $sm;
+$m-xs : $xm;
+
 
 
 
@@ -36,20 +50,21 @@ $mx-md : 0.375rem;
 body{
   padding: 0;
   margin: 0;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  // font-family: 'Nunito Sans', sans-serif;
   background-color: $secondary;
 }
 
 //nav style 
 .main-nav{
   background-color: $white;
-  padding: 0 $px-xxl;
+  padding: 0 $xxl;
 
 .nav-logo{
   .busibud{
     width: 120px;
     height: 50px;
-    padding: $py-sm 0;
+    padding: $sm 0;
   }
 }
 
@@ -71,21 +86,26 @@ body{
 
 }
 
-// .hero-banner{
-//   position: relative;
-// }
 
-// .hero-content{
-//  position: absolute;
+//hero Banner
 
-// }
 .hero-banner{
   background-color: $secondary;
-  position: relative;
 
 
   .hero-content{
-    padding: 0 $px-xxl;
+    padding: 0 $xxl;
+  }
+
+  // .heroBannerBlob{
+  // }
+
+  .heroBannerBlock{
+
+    padding-left: $xm;
+    .heroBannerBlob{
+    
+  }
   }
 
   .hero-tdb{
@@ -93,6 +113,117 @@ body{
     color: $black;
     font-weight: $font-w-xxl;
     font-size: $font-sm-xxl;
+  }
+  .title-color{
+    color: $primary;
+  }
+
+  .hero-discretion{
+    p{
+      font-size: $font-xs;
+      color: $black;
+    }
+  }
+
+    .hero-btn{
+    button{
+      width: 220px;
+      height: 45px;
+      background: $primary;
+      box-shadow: 0px 16px 48px #00000029;
+      color: $white;
+    }
+  }
+  }
+}
+
+
+
+// Section Two
+
+.sectionTwo{
+  padding: 0 $xxl;
+
+
+  .section-title{
+  padding: $xl $xl;
+  h2{
+    color: $black;
+    font-size: $font-xl;
+    font-weight: $font-w-xl;
+  }
+}
+.sectionTow-cards{
+
+}
+.sectionTow-card{
+  width: 18rem;
+  height: 18rem auto;
+  // margin: $m-xl;
+
+  .card-subtitle{
+    font-size: $font-xs;
+    font-weight: $font-xl;
+  }
+}
+
+
+// Section Three 
+  .cardImg{
+    width: 195px;
+    height: 170px;
+    padding: $md;
+  }
+
+  .sectionThree-Card{
+    padding: $lg 0;
+    margin-top: $lg 0;
+  }
+
+  .sectionThree-title{
+      padding: 0 $xl;
+  h2{
+    color: $black;
+    font-size: $font-xl;
+    font-weight: $font-w-xl;
+  }
+  }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+.hero-banner{
+  background-color: $secondary;
+    padding: 0 2rem;
+
+  .hero-content{
+    padding: $sm 0;
+    margin: 0;
+  }
+
+  .gridRow{
+    padding: $sm !important;
+  }
+
+  .heroBannerBlock{
+    .heroBannerBlob{
+    width: 450px;
+    height: 200px;
+    padding-left: $xm;
+  }
+  }
+
+  .hero-tdb{
+    padding: $x 0;
+    .title{
+    color: $black;
+    font-weight: $font-w-xl;
+    font-size: $font-md;
   }
   .title-color{
     color: $primary;
@@ -107,8 +238,10 @@ body{
 
     .hero-btn{
     button{
-      width: 220px;
-      height: 45px;
+      font-size: $font-xs;
+      font-weight: $font-w-xl;
+      width: 140px;
+      height: 40px;
       background: $primary;
       box-shadow: 0px 16px 48px #00000029;
       color: $white;
@@ -117,61 +250,19 @@ body{
   }
 }
 
-.heroWave{
-  position: absolute;
-  z-index: 4;
-  top: 0;
-  bottom: -600px;
-}
 
 
 // Section Two
-
 .sectionTwo{
-  padding: $py-sm $px-xxl;
+    padding: 0 0;
 
-  .section-title{
-  padding: 0 $px-xl;
-  h2{
-    color: $black;
-    font-size: $font-xl;
-    font-weight: $font-w-xl;
-  }
-}
-.sectionTow-cards{
-
-}
-.sectionTow-card{
-  width: 18rem;
-  height: 18rem auto;
-  margin: $m-xl;
-
-  .card-subtitle{
-    font-size: $font-xs;
-    font-weight: $font-xl;
-  }
-}
-
-}
-
-
-
-
-
-@media only screen and (max-width: 600px) {
-
-// Section Two
-
-
-.sectionTwo{
-  padding: $py-sm $px-md;
-}
 .section-title{
-  padding: 0 $px-sm;
-  h2{
+  padding: $md $ms;
+
+  .title-text{
     color: $black;
-    font-size: $font-sm;
     font-weight: $font-w-xl;
+    font-size: $font-md;
   }
 }
 .sectionTow-cards{
@@ -180,16 +271,17 @@ body{
 .sectionTow-card{
   width: 16rem;
   height: 15rem auto;
-  margin: $m-sm;
+  margin: $ms 0;
 
   .card-subtitle{
-    font-size: $font-mr-xs;
-    font-weight: $font-xl;
+    font-size: $font-xs;
+    font-weight: $font-xxl;
   }
 
   .card-text{
-    font-size: $font-mr-xs;
+    font-size: $font-xs;
   }
   }
+}
 
 }

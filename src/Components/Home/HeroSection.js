@@ -12,49 +12,38 @@ const HeroSection = () => {
     backgroundPosition: 'cover',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    height: "100vh",
+    height: "100%",
 
    }}
   >
    <div className='hero-content container-full justify-content justify-content-center align-items-center'>
-    <Row className="flex-row flex-sm-row-reverse justify-content-center align-content-center align-items-center ">
+    <Row className=" gridRow flex-row flex-sm-row-reverse justify-content-center align-content-center align-items-center ">
 
-     <Col className='d-flex align-items-center justify-content-center opacity-98 '>
-      <img className='text-center fluid justify-center ' src={HeroBanner} alt="" />
+     <Col className='heroBannerBlock d-flex align-items-center justify-content-center opacity-98 '>
+      <img className='heroBannerBlob  text-center fluid justify-center '  src={HeroBanner} alt="" />
      </Col>
 
-     <Col className='hero-tdb'>
+     <Col className='hero-tdb '>
       <div className="hero-title">
        <h1 className='title text-uppercase'>
         Let AI handle your all types
         <span className='title-color'> Tech, NoN Tech Problem.</span>
        </h1>
       </div>
-      <div className=" text-black">
-       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed commodo
-        est.Pellentesque eu placerat mauris. Etiam ut maximus ante. Suspendisse
-        varius dolor nec bibendum dignissim. Proin in diam a justo
-        sollicitudin mattis eu sagittis nunc. In hac habitasse platea dictumst.
-       </p>
-      </div>
-      <div className="hero-btn">
+      {/* <div className=" text-black pt-6"> */}
+      <p className='pt-3 text-black'>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed commodo
+       est.Pellentesque eu placerat mauris. Etiam ut maximus ante. Suspendisse
+       varius dolor nec bibendum dignissim. Proin in diam a justo
+       sollicitudin mattis eu sagittis nunc. In hac habitasse platea dictumst.
+      </p>
+      {/* </div> */}
+      <div className="hero-btn pt-4">
        <button className='rounded-pill border-0'>Check Pricing</button>
       </div>
      </Col>
     </Row>
    </div>
-   {/* <img className='heroWave' src={HeroWave} alt="" /> */}
-   {/* <div className="heroWave"
-    style={{
-     backgroundImage: `url(${HeroWave})`,
-     backgroundPosition: 'cover',
-     position: '',
-     backgroundSize: 'cover',
-     backgroundRepeat: 'no-repeat',
-    }}
-   ></div> */}
-
   </section>
  );
 };
