@@ -7,8 +7,8 @@ import './Style/Main.scss'
 function App() {
   return (
     <div className="">
-      {/* <NavBar /> */}
-      {/* <HeroSection /> */}
+      <NavBar />
+      <HeroSection />
       <SectionTwo />
     </div>
   );

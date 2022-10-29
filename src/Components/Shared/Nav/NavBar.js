@@ -5,7 +5,7 @@ import '../../../Style/Main.scss'
 
 const NavBar = () => {
  return (
-  <div className="main-nav d-flex justify-content-between justify-content-center align-items-center py-2">
+  <div className="main-nav d-flex justify-content-between justify-content-center align-items-center py-2 border-bottom border-dark">
    <div className="nav-logo">
     <img className='busibud' src={navLogo} alt="" />
    </div>

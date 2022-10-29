@@ -21,6 +21,7 @@ $font-sm-xxl : 600;
 // padding & margin
 $px-xxl : 7rem;
 $px-xl : 4.625rem;
+$px-md : 1rem;
 $px-sm :0.25rem;
 $py-sm : 0.25rem; 
 $m-xl : 2.5rem;
@@ -79,7 +80,9 @@ body{
 
 // }
 .hero-banner{
-  background-color: $white;
+  background-color: $secondary;
+  position: relative;
+
 
   .hero-content{
     padding: 0 $px-xxl;
@@ -114,13 +117,20 @@ body{
   }
 }
 
+.heroWave{
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  bottom: -600px;
+}
+
 
 // Section Two
 
 .sectionTwo{
   padding: $py-sm $px-xxl;
-}
-.section-title{
+
+  .section-title{
   padding: 0 $px-xl;
   h2{
     color: $black;
@@ -142,17 +152,19 @@ body{
   }
 }
 
+}
+
+
 
 
 
 @media only screen and (max-width: 600px) {
 
-
-
 // Section Two
 
+
 .sectionTwo{
-  padding: $py-sm $px-sm;
+  padding: $py-sm $px-md;
 }
 .section-title{
   padding: 0 $px-sm;

@@ -1,19 +1,26 @@
 import React from 'react';
 import { Col, Container, Figure, Row } from 'react-bootstrap';
 import HeroBanner from '../../assets/SvG/Mask Group 1.svg';
-// import HeroWave from '../../assets/SvG/Herowaves.svg'
-import heroPettern from '../../assets/SvG/pattern.svg'
-// import '../../Style/HeroSection.scss';
+import HeroWave from '../../assets/wave.svg';
 import '../../Style/Main.scss'
 
 const HeroSection = () => {
  return (
-  <section className='hero-banner container-full justify-content-between justify-content-center align-items-center'>
+  <section className='hero-banner container-full justify-content-between justify-content-center align-items-center'
+   style={{
+    backgroundImage: `url(${HeroWave})`,
+    backgroundPosition: 'cover',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    height: "100vh",
+
+   }}
+  >
    <div className='hero-content container-full justify-content justify-content-center align-items-center'>
     <Row className="flex-row flex-sm-row-reverse justify-content-center align-content-center align-items-center ">
 
      <Col className='d-flex align-items-center justify-content-center opacity-98 '>
-      <img className='text-center fluid justify-center' src={HeroBanner} alt="" />
+      <img className='text-center fluid justify-center ' src={HeroBanner} alt="" />
      </Col>
 
      <Col className='hero-tdb'>
@@ -35,9 +42,19 @@ const HeroSection = () => {
        <button className='rounded-pill border-0'>Check Pricing</button>
       </div>
      </Col>
-
     </Row>
    </div>
+   {/* <img className='heroWave' src={HeroWave} alt="" /> */}
+   {/* <div className="heroWave"
+    style={{
+     backgroundImage: `url(${HeroWave})`,
+     backgroundPosition: 'cover',
+     position: '',
+     backgroundSize: 'cover',
+     backgroundRepeat: 'no-repeat',
+    }}
+   ></div> */}
+
   </section>
  );
 };

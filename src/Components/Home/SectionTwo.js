@@ -5,9 +5,9 @@ import '../../Style/Main.scss';
 const SectionTwo = () => {
  return (
   <div className="sectionTwo">
-   {/* <div className="section-title text-center">
+   <div className="section-title text-center">
     <h2>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</h2>
-   </div> */}
+   </div>
 
    <div className='section-cards p-0 m-0 container-full row justify-center justify-content-center'>
     {/* card one */}
@@ -46,7 +46,6 @@ const SectionTwo = () => {
       </Card.Text>
      </Card.Body>
     </Card>
-
    </div>
   </div>
  );
