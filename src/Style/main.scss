@@ -1,35 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700&display=swap');
-@import "~bootstrap/scss/bootstrap";
 @import 'variables.scss';
 @import './HeroSection.scss';
 
 
 
+// css width 
+$xxl : 7rem; //112px
+$ll : 6.5rem; //104
+$xl : 4.625rem; //74px
+$xx : 4rem; //64px
+$x  : 3.75rem; //60px
+$lg : 2.5rem; //40px
+$lm : 2rem; //32px
+$ls : 1.5rem; //24px
+$md : 1rem; //16px
+$ms : 0.5rem; //8px
+$sm :0.375rem; //6px
+$xm : 0.25rem; //4px
+
 // font size 
-$font-xxl : 2rem;
-$font-xl : 1.5rem;
-$font-md : 1.25rem;  
-$font-sm : 1rem;
-$font-xs : 0.875rem;
-$font-xx : 0.5rem;
-$font-mr-xs : 0.75rem;
-$font-xs : 0.875rem;
+$font-xxl : 2.5rem; //40px
+$font-xl : 2rem; //32px
+$font-lg : 1.5rem; //24px
+$font-md : 1.25rem; //20px 
+$font-sm : 1rem; //16px
+$font-xs : 0.875rem; //14px
+$font-mr-xs : 0.75rem; //12px
+$font-xx : 0.5rem; //8px
 
 //font width 
 $font-w-xxl : 900;
 $font-w-xl: 700;
 $font-sm-xxl : 600; 
 
-// padding & margin
-$xxl : 7rem;
-$xl : 4.625rem;
-$x : 3.75rem;
-$lg : 2.5rem;
-$md : 1rem;
-$ms : 0.5rem;
-$sm :0.375rem;
-$xm : 0.25rem;
 
+// padding & margin
 $px-xxl : $xxl;
 $px-xl : $xl;
 $px-md : $md;
@@ -45,8 +50,7 @@ $m-xs : $xm;
 
 
 
-
-
+// Universal CSS Style 
 body{
   padding: 0;
   margin: 0;
@@ -55,17 +59,71 @@ body{
   background-color: $secondary;
 }
 
+// all sections left right padding 
+.sections{
+padding: 0 $xxl;
+}
+
+.sections-title{
+  padding: $xl $xl;
+}
+
+h1{
+  color: $black;
+  font-weight: $font-w-xxl;
+  font-size: $font-sm-xxl;
+}
+
+h2{
+  color: $black;
+  font-size: $font-xl;
+  font-weight: $font-w-xl;
+}
+
+h3{
+  color: $black;
+  font-size: $font-lg;
+  font-weight: $font-w-xl;
+}
+
+h4{
+    color: $black;
+  font-size: $font-md;
+  font-weight: $font-w-xl;
+}
+
+p{
+  font-size: $font-xs;
+  color: $black;
+  font-weight: normal;
+}
+
+button{
+  width: 220px;
+  height: 45px;
+  background: $primary;
+  box-shadow: 0px 16px 48px #00000029;
+  color: $white;
+}
+
+
+// Universal CSS Style 
+
+
+
+//Normal Page Css Style
 //nav style 
 .main-nav{
   background-color: $white;
-  padding: 0 $xxl;
+  .nav-bar{
 
-.nav-logo{
-  .busibud{
-    width: 120px;
-    height: 50px;
-    padding: $sm 0;
   }
+  .nav-logo{
+    .busibud{
+      width: 120px;
+      height: 50px;
+      padding: $sm 0;
+    }
 }
 
 .nav-bar{
@@ -91,125 +149,214 @@ body{
 
 .hero-banner{
   background-color: $secondary;
-
-
-  .hero-content{
-    padding: 0 $xxl;
-  }
-
-  // .heroBannerBlob{
-  // }
-
   .heroBannerBlock{
-
     padding-left: $xm;
-    .heroBannerBlob{
-    
-  }
-  }
-
-  .hero-tdb{
-    .title{
-    color: $black;
-    font-weight: $font-w-xxl;
-    font-size: $font-sm-xxl;
   }
   .title-color{
     color: $primary;
   }
-
-  .hero-discretion{
-    p{
-      font-size: $font-xs;
-      color: $black;
-    }
-  }
-
-    .hero-btn{
-    button{
-      width: 220px;
-      height: 45px;
-      background: $primary;
-      box-shadow: 0px 16px 48px #00000029;
-      color: $white;
-    }
-  }
-  }
 }
 
-
+// ---All Sections-- //
 
 // Section Two
-
 .sectionTwo{
-  padding: 0 $xxl;
-
-
-  .section-title{
-  padding: $xl $xl;
-  h2{
-    color: $black;
-    font-size: $font-xl;
-    font-weight: $font-w-xl;
-  }
-}
-.sectionTow-cards{
-
-}
-.sectionTow-card{
-  width: 18rem;
-  height: 18rem auto;
-  // margin: $m-xl;
-
+  .sectionTow-card{
+    width: 18rem;
+    height: 18rem auto;
   .card-subtitle{
     font-size: $font-xs;
     font-weight: $font-xl;
   }
 }
 
+}
 
 // Section Three 
+.sectionThree{
+  padding-bottom: $lm;
   .cardImg{
     width: 195px;
     height: 170px;
     padding: $md;
+}
+}
+
+
+// Sections Four
+.sectionFour{
+  img{
+    width: 75px;
+    height: 75px;
+  }
+  background-color: $white;
+  .dataTitle{
+    padding-left: $md;
+    margin: 0;
+  }
+  .data{
+    width: 50%;
+  }
+  .data-description{
+    padding-top: $md;
+    margin: 0;
+  }
+  .left-section,
+  .right-section{
+  padding-bottom: $lg;
+}
+}
+
+
+//section five
+.sectionFive{
+  background-color: $white;
+  position: relative;
+.feedback-container{
+  // padding-bottom: $lg;
+  }
+  .sectionFive-cards{
+    // all feedback cards 
+  width: 100%;
+  height: 360px;
+  background-color: $secondary;
+  box-shadow: 0px 16px 48px #00000029;
+  border-radius: 44px;
+  opacity: 1;
+
+  .feedback-cards{
+    padding: 0 $ll; //104px
   }
 
-  .sectionThree-Card{
-    padding: $lg 0;
-    margin-top: $lg 0;
+  .latest-rating{
+    padding: $lg;
+  }
+  .sectionFive-card{
+    // single feedback card 
+  width: 280px;
+  height: 260px auto;
+  box-shadow: 0px 16px 48px #00000029;
+  border-radius: 34px;
+  padding: $md;
+  }
+  .user-info,
+  .rate{
+    padding-left: $md;
+  }
+  .user-feedback{
+    padding-top: $md;
+  }
   }
 
-  .sectionThree-title{
-      padding: 0 $xl;
-  h2{
-    color: $black;
-    font-size: $font-xl;
-    font-weight: $font-w-xl;
+  .arrow-btn{
+    width: $xx;
+    height: $xx;
+    background-color: $white;
+    box-shadow: 0px 7px 17px #00000029;
+    .arrow-icon{
+    width: $ls;
+    height: $ls;
+    left: 20px;
+    top: 30%;
+    color: $primary;
   }
   }
+
+
 
 }
 
+//Section Six
+.sectionSix{
+  background-color: $white;
+  padding: $xxl 0;
+  img{
+    width: 200px;
+    height: 80px;
+  }
+  h5{
+    font-size: $font-mr-xs;
+    $font-sm-xxl : 600;
+  }
+}
 
 
 
 
 @media only screen and (max-width: 600px) {
 
+// --- Universal css for mobile devices -- 
+// All sections left right padding 
+body{
+  padding: 0;
+  margin: 0;
+}
+.sections{
+  padding: 0;
+}
+.sections-title{
+    padding: $md $lm;
+}
+.sections-cards{
+  padding: 0 $lm;
+  margin: 0;
+  .cards{
+    padding: 0;
+  }
+}
+
+h1{
+  font-size: $font-md;
+}
+h2{
+  font-size: $font-sm;
+}
+h3{
+  font-size: $font-xs;
+}
+h4{
+  font-size: $font-mr-xs;
+}
+p{
+  font-size: $font-xs;
+  color: $black;
+}
+button{
+  font-size: $font-mr-xs;
+  font-weight: $font-w-xl;
+  width: 120px;
+  height: 35px;
+  background: $primary;
+  box-shadow: 0px 16px 48px #00000029;
+  color: $white;
+}
+
+// Navigation Bar
+.nav-bar{
+  #navToggle{
+    // background-color: $secondary; 
+    // padding: 0 20px;
+  }
+  .navbar-toggler-icon{
+    background-color: $black;
+    filter: invert(100%);
+  }
+}
+
+
+// section styles
 .hero-banner{
   background-color: $secondary;
-    padding: 0 2rem;
+  padding: 0 $lm $md; 
+  // top | left and right | bottom 
 
   .hero-content{
-    padding: $sm 0;
+    padding-bottom: $sm;
     margin: 0;
   }
-
   .gridRow{
-    padding: $sm !important;
+    padding-bottom: $sm;
   }
-
   .heroBannerBlock{
     .heroBannerBlob{
     width: 450px;
@@ -217,54 +364,10 @@ body{
     padding-left: $xm;
   }
   }
-
-  .hero-tdb{
-    padding: $x 0;
-    .title{
-    color: $black;
-    font-weight: $font-w-xl;
-    font-size: $font-md;
-  }
-  .title-color{
-    color: $primary;
-  }
-
-    .hero-discretion{
-    p{
-      font-size: $font-xs;
-      color: $black;
-    }
-    }
-
-    .hero-btn{
-    button{
-      font-size: $font-xs;
-      font-weight: $font-w-xl;
-      width: 140px;
-      height: 40px;
-      background: $primary;
-      box-shadow: 0px 16px 48px #00000029;
-      color: $white;
-    }
-  }
-  }
 }
-
-
-
 // Section Two
 .sectionTwo{
-    padding: 0 0;
 
-.section-title{
-  padding: $md $ms;
-
-  .title-text{
-    color: $black;
-    font-weight: $font-w-xl;
-    font-size: $font-md;
-  }
-}
 .sectionTow-cards{
   padding: 0;
 }
@@ -283,5 +386,116 @@ body{
   }
   }
 }
+// Sections Four
+.sectionFour{
+  img{
+    width: 45px;
+    height: 45px;
+  }
+  .data{
+    width: 100% ;
+  }
+
+  .dataTitle{
+    font-size: $font-xs;
+  }
+  .left-section,
+  .right-section{
+    padding-bottom: $lg;
+  }
+}
+
+
+//section five
+.sectionFive{
+  .feedback-container{
+    padding-bottom: $md;
+  }
+  .sectionFive-cards{
+    width: auto;
+    height: auto;
+    padding: 0;
+    border-radius: 20px;
+  .feedback-cards{
+    padding: 0; //104px
+  }
+  .latest-rating{
+    padding: $md;
+    margin: 0;
+    justify-content: center;
+  }
+    img{
+    width: 45px;
+    height: 45px;
+  }
+  h4{
+    font-size: $font-mr-xs;
+  }
+  .user-info{
+    padding-left: $md;
+  }
+.sectionFive-card{
+    // single feedback card 
+  width: fit-content;
+  height: 260px auto;
+  border-radius: $md;
+  padding: $md;
+  }
+  .user-avatar{
+    img{
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .user-info,
+  .rate{
+    padding-left:$md;
+    .rate-star{
+      width: 10px;
+      height: 10px;
+    }
+  }  
+
+  p{
+    font-size: $font-mr-xs;
+  }
+
+  .arrow-btn{
+    width: $lg;
+    height: $lg;
+
+  .arrow-icon{
+    width: $md;
+    height: $md;
+    left: 30%;
+    top: 30%;
+    color: $primary;
+  }
+  }
+}
 
 }
+
+//Section Six
+.sectionSix{
+  background-color: $white;
+  padding: $xxl 0;
+  img{
+    width: 120px;
+    height: 45px;
+  }
+  h5{
+    font-size: $font-mr-xs;
+    $font-sm-xxl : 600;
+  }
+  .company-data{
+    padding: $md;
+  }
+  
+}
+
+
+}
+
+
+

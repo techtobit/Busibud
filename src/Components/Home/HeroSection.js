@@ -16,7 +16,7 @@ const HeroSection = () => {
 
    }}
   >
-   <div className='hero-content container-full justify-content justify-content-center align-items-center'>
+   <div className='hero-content sections container-full justify-content justify-content-center align-items-center'>
     <Row className=" gridRow flex-row flex-sm-row-reverse justify-content-center align-content-center align-items-center ">
 
      <Col className='heroBannerBlock d-flex align-items-center justify-content-center opacity-98 '>
