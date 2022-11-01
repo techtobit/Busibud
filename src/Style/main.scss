@@ -164,10 +164,14 @@ button{
   .sectionTow-card{
     width: 18rem;
     height: 18rem ;
+    
   .card-subtitle{
     font-size: $font-xs;
     font-weight: $font-xl;
   }
+}
+.cards{
+  padding-top: $md;
 }
 
 }
@@ -279,6 +283,29 @@ button{
     $font-sm-xxl : 600;
   }
 }
+
+
+// Footer 
+.footer{
+  
+  background-color: $black;
+
+  .footer-content{
+    // padding: 0 $md;
+  }
+  .footer-links{
+    padding: 20px;
+}
+  p{
+    color: $white;
+  }
+.footer-paymentImg{
+  width: 220px;
+  height: 120px;
+}
+}
+
+
 
 
 

@@ -6,8 +6,8 @@ import SectionFour from './Components/Home/SectionFour';
 import SectionFive from './Components/Home/SectionFive';
 import SectionSix from './Components/Home/SectionSix';
 import NavBar from './Components/Shared/Nav/NavBar';
-import './Style/Main.scss'
 import Footer from './Components/Shared/Footer/Footer';
+import './Style/Main.scss'
 
 function App() {
   return (
