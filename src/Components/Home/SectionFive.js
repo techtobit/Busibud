@@ -11,7 +11,7 @@ import SectionHeading from '../Shared/SectionHeading/SectionHeading';
 const SectionFive = () => {
  return (
   <div className='sectionFive sections'>
-   <SectionHeading>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</SectionHeading>
+   <SectionHeading>What Our Customers Say.</SectionHeading>
    <div className="sections-cards feedback-container">
     <div className="sectionFive-cards position-relative">
      <div className="latest-rating d-flex align-items-center ">

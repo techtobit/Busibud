@@ -20,7 +20,7 @@ const HeroSection = () => {
     <Row className=" gridRow flex-row flex-sm-row-reverse justify-content-center align-content-center align-items-center ">
 
      <Col className='heroBannerBlock d-flex align-items-center justify-content-center opacity-98 '>
-      <img className='heroBannerBlob  text-center fluid justify-center '  src={HeroBanner} alt="" />
+      <img className='heroBannerBlob  text-center fluid justify-center ' src={HeroBanner} alt="" />
      </Col>
 
      <Col className='hero-tdb '>
@@ -32,10 +32,10 @@ const HeroSection = () => {
       </div>
       {/* <div className=" text-black pt-6"> */}
       <p className='pt-3 text-black'>
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed commodo
-       est.Pellentesque eu placerat mauris. Etiam ut maximus ante. Suspendisse
-       varius dolor nec bibendum dignissim. Proin in diam a justo
-       sollicitudin mattis eu sagittis nunc. In hac habitasse platea dictumst.
+       Busibud offers the world’s first AI enabled, fully automated customer
+       service suite. Our automated technology helps you save over 50% on
+       your support costs by letting cyborgs handle support with a high
+       level of accuracy.
       </p>
       {/* </div> */}
       <div className="hero-btn pt-4">

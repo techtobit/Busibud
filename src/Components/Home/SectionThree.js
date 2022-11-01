@@ -20,8 +20,8 @@ const SectionThree = () => {
 
    }}
   >
-   <SectionHeading>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</SectionHeading>
-   
+   <SectionHeading>Worried about sourcing smart agents?</SectionHeading>
+
    <Row className='sections-cards sectionThree-Card justify-center justify-content-center'>
     <Col className='cards'>
      <Card className='sectionTow-card bg-transparent  border-0'>

@@ -11,7 +11,7 @@ import SectionHeading from '../Shared/SectionHeading/SectionHeading';
 const SectionFour = () => {
  return (
   <div className='sectionFour sections'>
-   <SectionHeading>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</SectionHeading>
+   <SectionHeading>Worried about sourcing smart agents?</SectionHeading>
    <div className="sectionFour-data sections-cards">
     {/* data container 01 */}
     <div className="left-section d-flex justify-start justify-content-start">
